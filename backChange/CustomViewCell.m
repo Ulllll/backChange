@@ -22,7 +22,7 @@
     if (self)
     {
         _titleLabel = [UILabel new];
-        _titleLabel.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+        _titleLabel.backgroundColor = [UIColor colorWithWhite:249.0/255.0 alpha:0.8];
         //_titleLabel.backgroundColor = [UIColor orangeColor];
         [self.contentView addSubview:_titleLabel];
     }
@@ -34,7 +34,7 @@
     [super layoutSubviews];
     
     self.titleLabel.frame = CGRectMake(20.f, 20.f, 140.f, 140.f);
-
+    
 }
 
 - (void)preapeForReuse

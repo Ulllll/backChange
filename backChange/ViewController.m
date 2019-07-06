@@ -36,7 +36,7 @@
     self.collectionView.dataSource = self;
     
     self.moreTitle = @[@"First", @"Second", @"Third", @"Four", @"Five", @"Six", @"Seven", @"Eight", @"Nine"];
-   
+    
     [self.collectionView registerClass:[CustomViewCell class] forCellWithReuseIdentifier:NSStringFromClass([CustomViewCell class])];
     
 }
@@ -56,7 +56,7 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     CustomViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CustomViewCell class]) forIndexPath:indexPath];
     
     NSString *title = self.moreTitle[indexPath.row];
